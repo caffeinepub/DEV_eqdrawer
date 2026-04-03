@@ -1,0 +1,21 @@
+{
+  "overview": "A 2D equation drawing app that lets you sketch mathematical expressions freehand and stores them in your account — accessible from any device after login.",
+  "features": [
+    "Freehand 2D equation drawing canvas",
+    "Equation library with thumbnail previews",
+    "Per-user storage — resume from any device",
+    "Internet Identity login",
+    "Save, rename, and delete equations",
+    "Zoom and pan controls on the canvas"
+  ],
+  "category": "productivity",
+  "tags": [
+    "equations",
+    "drawing",
+    "math",
+    "canvas",
+    "persistence",
+    "cross-device"
+  ],
+  "last_updated": "2026-04-02T12:47:27.668Z"
+}

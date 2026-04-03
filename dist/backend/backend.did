@@ -1,0 +1,30 @@
+type UserId = principal;
+type UpdateEquationArgs = 
+ record {
+   canvasData: opt text;
+   id: EquationId;
+   name: opt text;
+ };
+type Timestamp = int;
+type EquationId = nat;
+type Equation = 
+ record {
+   canvasData: text;
+   createdAt: Timestamp;
+   id: EquationId;
+   name: text;
+   owner: UserId;
+   updatedAt: Timestamp;
+ };
+type CreateEquationArgs = 
+ record {
+   canvasData: text;
+   name: text;
+ };
+service : {
+  createEquation: (args: CreateEquationArgs) -> (Equation);
+  deleteEquation: (id: EquationId) -> (bool);
+  getEquation: (id: EquationId) -> (opt Equation) query;
+  listEquations: () -> (vec Equation) query;
+  updateEquation: (args: UpdateEquationArgs) -> (opt Equation);
+}
